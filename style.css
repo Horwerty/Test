@@ -1,0 +1,87 @@
+
+
+header {
+      background-image: url();
+      width: 50vh;
+      height: 50px;
+      display:flex;
+}
+
+nav li {
+      list-style-type: none;
+      display: inline;
+}
+
+.Shape1 {
+      border-style: outset;
+      background-color: red;
+      padding: 10px;
+      width: 50vh;
+      animation: move 2s linear -2s infinite alternate both;
+}
+
+@keyframes move {
+      0% {
+            transform: translateX(0px);
+      }
+      100% {
+            transform: translateX(100px);
+      }
+}
+
+
+.Shape2 {
+      border-style: outset;
+      background-color: green;
+      padding: 10px;
+      margin-top: 20px;
+      width: 50vh;
+      height: 50vh;
+}
+
+.Shape3 {
+      border-style: none;
+      background-color: yellow;
+      margin-top: 20px;
+      padding: 10px;
+      height: 50vh;
+      width: 50vh;
+      border-radius: 170px;
+}
+
+.shape4 {
+      border-style: groove;
+      background-color: blue;
+      margin-top: 20px;
+      padding: 10px;
+      width: 50vh;
+      height: 50vh;
+      border-bottom-left-radius: 80px;
+      border-top-right-radius: 80px;
+      animation: changeColor 2s linear 1s infinite alternate both;
+      animation-duration: 2s;
+}
+
+@keyframes changeColor {
+      0% {
+            background-color: blue;
+      }
+      10% {
+            background-color: red;
+      }
+      20% {
+            background-color: yellow;
+      }
+      30% {
+            background-color: green;
+      }
+      40% {
+            background-color: brown;
+      }
+      80% {
+            background-color: pink;
+      }
+      100% {
+            background-color: purple;
+      }
+}

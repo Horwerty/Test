@@ -17,15 +17,34 @@ nav li {
       background-color: red;
       padding: 10px;
       width: 50vh;
-      animation: move 2s linear -2s infinite alternate both;
+      height: 10vh;
+      animation: move 1s linear -2s infinite alternate both;
 }
 
 @keyframes move {
       0% {
-            transform: translateX(0px);
+            transform: translateY(0px);
+            background-color: red;
+      }
+      20% {
+            transform: translateY(20px);
+            background-color: chartreuse;
+      }
+      40% {
+            transform: translateY(40px);
+            background-color: darkblue;
+      }
+      60% {
+            transform: translateY(60px);
+            background-color: crimson;
+      }
+      80% {
+            transform: translateY(80px);
+            background-color: darkgoldenrod;
       }
       100% {
-            transform: translateX(100px);
+            transform: translateY(100px);
+            background-color: teal;
       }
 }
 
@@ -34,19 +53,47 @@ nav li {
       border-style: outset;
       background-color: green;
       padding: 10px;
-      margin-top: 20px;
+      margin-top: 50px;
       width: 50vh;
-      height: 50vh;
+      height: 20vh;
+      animation: load 1s ease-in -1s infinite alternate-reverse forwards;
+}
+
+@keyframes load {
+      0% {
+            background-color: green;
+            transform: translateX(0px);
+      }
+      50% {
+            background-color: yellow;
+            transform: translateX(50px);
+      }
+      100% {
+            background-color: red;
+            transform: translateX(100px);
+      }
 }
 
 .Shape3 {
-      border-style: none;
+      border-style: dotted;
       background-color: yellow;
       margin-top: 20px;
       padding: 10px;
-      height: 50vh;
+      height: 20vh;
       width: 50vh;
       border-radius: 170px;
+      animation: rotate -2s ease-in-out 1s infinite alternate-reverse backwards;
+}
+
+@keyframes rotate {
+      0% {
+            transform: rotateX(0);
+            background-color: aqua;
+      }
+      100% {
+            transform: rotateX(360);
+            background-color: palevioletred;
+      }
 }
 
 .shape4 {
@@ -55,7 +102,7 @@ nav li {
       margin-top: 20px;
       padding: 10px;
       width: 50vh;
-      height: 50vh;
+      height: 10vh;
       border-bottom-left-radius: 80px;
       border-top-right-radius: 80px;
       animation: changeColor 2s linear 1s infinite alternate both;
